@@ -46,7 +46,7 @@ class MovieDetail extends React.Component<MovieDetailProps, MovieDetailState> {
         </div>
 
         <div className="col-md-7">
-          <img src={this.state.movie.image} alt="project-image" className="rounded" />
+          <img src={this.state.movie.image} alt="project-image" className="rounded" /> { /* This images shows a CORS error in the browser console. But I figured it should be here instead of thumbnail */ }
           <div className="project-info-box">
             <p><b>Genres:</b> { this.state.movie.genre }</p>
           </div>
